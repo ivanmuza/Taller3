@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><title>datos usuario</title></head>
+<body>
+<h3>Rellena tu CV</h3>
+<form action="menu.html" method="post">
+	Nombre<br/>
+	<input type="text" name="nombre" value="" size="20" maxlenght="30"/><br/>
+	Apellidos<br/>
+	<input type="text" name="apellidos" value="" size="50" maxlenght="80" /><br/>
+    Contraseña<br/>
+	<input type="password" name="contraseña" value="" maxlenght="20" /><br/>
+	Confirme Contraseña<br/>
+	<input type="password" name="contraseña" value="" maxlenght="20" /><br/>
+	Identificación<br/>
+    <select name="select">
+    	<option value="CC">CC</option>
+    	<option value="TI" selected="">TI</option>
+    </select>
+	<input type="text" name="identificacion" value="" maxlenght="10" /><br/>
+    Sexo<br/>
+	<input type="radio" name="sexo" value="hombre"/> Hombre <br/>
+	<input type="radio" name="sexo" value="mujer"/> Mujer <br/>
+	<br/>
+	Incluir mi foto <br/>
+	<input type="file" name="foto"/><br/>
+	<br/>
+	<input type="checkbox" name="casilla">Estudiante...
+ 	<br/> 
+   <fieldset style="width:40%">
+   <legend>Datos personales</legend>
+  
+   </fieldset>
+
+	<input type="submit" value="Guardar cambios">
+    <input type="reset" value="Borrar los datos introducidos">
+</form>
+</body>
+</html>
