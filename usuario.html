@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head><title>datos usuario</title></head>
+</head>
 <body>
 <h3>Rellena tu CV</h3>
-<form action="menu.html" method="post">
+<form action="formulario.html" method="post">
 	Nombre<br/>
-	<input type="text" name="nombre" value="" size="20" maxlenght="30"/><br/>
+	<input type="text" name="nombre" value="" size="20" maxlenght="30" required/><br/>
 	Apellidos<br/>
-	<input type="text" name="apellidos" value="" size="50" maxlenght="80" /><br/>
+	<input type="text" name="apellidos" value="" size="50" maxlenght="80" required/><br/>
     Contraseña<br/>
-	<input type="password" name="contraseña" value="" maxlenght="20" /><br/>
+	<input type="password" name="contraseña" value="" maxlenght="20" required/><br/>
 	Confirme Contraseña<br/>
-	<input type="password" name="contraseña" value="" maxlenght="20" /><br/>
+	<input type="password" name="contraseña" value="" maxlenght="20" required/><br/>
 	Identificación<br/>
     <select name="select">
     	<option value="CC">CC</option>
     	<option value="TI" selected="">TI</option>
     </select>
-	<input type="text" name="identificacion" value="" maxlenght="10" /><br/>
+	<input type="text" name="identificacion" value="" maxlenght="10" required/><br/>
     Sexo<br/>
 	<input type="radio" name="sexo" value="hombre"/> Hombre <br/>
 	<input type="radio" name="sexo" value="mujer"/> Mujer <br/>
+	<input type="radio" name="sexo" value="no definido"/> Prefiero no revelar<br/>
 	<br/>
 	Incluir mi foto <br/>
 	<input type="file" name="foto"/><br/>
 	<br/>
 	<input type="checkbox" name="casilla">Estudiante...
- 	<br/> 
-   <fieldset style="width:40%">
+ 	<br/><br/> 
+   <fieldset style="width:25%">
    <legend>Datos personales</legend>
-  
-   </fieldset>
-
+   Departamento<br/>
+    <select name="select">
+    	<option value="0" selected="">-selecciona-   </option>
+    	<option value="1">Amazonas</option>
+    	<option value="2">Antioquia</option>
+    	<option value="3">Arauca</option>
+    	<option value="4">Atlántico</option>
+    	<option value="5">Bogotá</option>
+    	<option value="6">Bolívar</option>
+    	<option value="7">Boyacá</option>
+    	<option value="8">Caldas</option>
+    	<option value="8">Caquetá</option>
+    	<option value="9">Casanare</option>
+    	<option value="10">Cauca</option>
+    	<option value="11">Cesar</option>
+    	<option value="12">Chocó</option>
+    	<option value="13">Córdona</option>
+    	<option value="14">Cundinarmaca</option>
+    	<option value="15">Guainía</option>
+    	<option value="16">Guaviare</option>
+    	<option value="17">Huila</option>
+        <option value="18">La Guajira</option>
+        <option value="19">Magdalena</option>
+        <option value="20">Meta</option>
+        <option value="21">Nariño</option>
+        <option value="22">Norte de Santander</option>
+        <option value="23">Putumayo</option>
+        <option value="24">Quindío</option>
+        <option value="25">Risaralda</option>
+        <option value="26">San Andrés y Providencia</option>
+        <option value="27">Santander</option>
+        <option value="28">Sucre</option>
+        <option value="29">Tolima</option>
+        <option value="30">Valle del Cauca</option>
+        <option value="31">Vaupés</option>
+        <option value="32">Vichada</option>
+    </select>
+    <br/><br/>
+    Fecha de nacimiento<br/>
+    <input type="date" name="fecha">
+    <br/><br/>
+    Tema de interés<br/>
+    <select size="5">
+     <option value="1">Administración de bases de datos</option>
+     <option value="2">Análisis y programación</option>
+     <option value="3">Arquitectura</option>
+     <option value="4">Calidad</option>
+     <option value="5">ERP, CRM, Business Intelligence</option>
+     <option value="6">Construcción de Software</option>
+     <option value="7">Seguridad informática</option>
+     <option value="8">Robótica</option>
+     <option value="9">Inteligencia Artificial</option>
+     <option value="10">Biotecnología</option>
+    </select>
+    </fieldset>
 	<input type="submit" value="Guardar cambios">
     <input type="reset" value="Borrar los datos introducidos">
 </form>
